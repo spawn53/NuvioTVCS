@@ -1,0 +1,758 @@
+name: Build Nuvio CS TV APK
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build selective CloudStream TV APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Prepare empty local properties
+        run: |
+          touch local.properties
+          touch local.dev.properties
+
+      - name: Apply Nuvio CS source patch
+        run: |
+          python3 - <<'PY_PATCH'
+          #!/usr/bin/env python3
+          from __future__ import annotations
+
+          import sys
+          from pathlib import Path
+
+
+          def fail(message: str) -> None:
+              raise SystemExit(f"[Nuvio CS patch] {message}")
+
+
+          def read(path: Path) -> str:
+              if not path.exists():
+                  fail(f"File not found: {path}")
+              return path.read_text(encoding="utf-8")
+
+
+          def write(path: Path, text: str) -> None:
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text(text, encoding="utf-8")
+
+
+          def require(text: str, needle: str, label: str) -> None:
+              if needle not in text:
+                  fail(f"Expected marker not found for {label}: {needle!r}")
+
+
+          def patch_build_gradle(repo: Path) -> None:
+              path = repo / "app" / "build.gradle.kts"
+              text = read(path)
+
+              if 'applicationId = "com.nuvio.tv.cs"' not in text:
+                  marker = '        create("full") {\n            dimension = "distribution"\n'
+                  require(text, marker, "full product flavor")
+                  text = text.replace(
+                      marker,
+                      marker + '            applicationId = "com.nuvio.tv.cs"\n',
+                      1,
+                  )
+
+              full_start = text.index('        create("full") {')
+              playstore_start = text.index('        create("playstore") {', full_start)
+              full_block = text[full_start:playstore_start]
+              updater_true = 'buildConfigField("boolean", "FEATURE_IN_APP_UPDATES_ENABLED", "true")'
+              updater_false = 'buildConfigField("boolean", "FEATURE_IN_APP_UPDATES_ENABLED", "false")'
+              if updater_true in full_block:
+                  full_block = full_block.replace(updater_true, updater_false, 1)
+                  text = text[:full_start] + full_block + text[playstore_start:]
+
+              write(path, text)
+
+              label_path = repo / "app" / "src" / "full" / "res" / "values" / "nuvio_cs.xml"
+              label_xml = """<resources>
+              <string name="app_name">Nuvio CS</string>
+          </resources>
+          """
+              write(label_path, label_xml)
+
+
+          def patch_external_extension_loader(repo: Path) -> None:
+              path = repo / "app" / "src" / "full" / "java" / "com" / "nuvio" / "tv" / "core" / "plugin" / "cloudstream" / "ExternalExtensionLoader.kt"
+              text = read(path)
+
+              if "fun isExtensionInstalled(scraperId: String)" not in text:
+                  marker = "\n    fun deleteExtension(scraperId: String) {"
+                  require(text, marker, "ExternalExtensionLoader.deleteExtension")
+                  addition = """
+              /**
+               * Returns true when this CloudStream provider has an on-disk .cs3 payload.
+               * Repository entries may exist without being installed.
+               */
+              fun isExtensionInstalled(scraperId: String): Boolean {
+                  val file = File(extensionsDir, "${safeFileName(scraperId)}.cs3")
+                  return file.exists() && file.isFile && file.length() > 0L
+              }
+          """
+                  text = text.replace(marker, addition + marker, 1)
+
+              write(path, text)
+
+
+          def patch_plugin_manager(repo: Path) -> None:
+              path = repo / "app" / "src" / "full" / "java" / "com" / "nuvio" / "tv" / "core" / "plugin" / "PluginManager.kt"
+              text = read(path)
+
+              if "Register .cs3 DEX extensions without downloading them." not in text:
+                  start_marker = "    /**\n     * Download .cs3 DEX extensions in parallel"
+                  end_marker = "\n    companion object {"
+                  require(text, start_marker, "downloadDexExtensions start")
+                  start = text.index(start_marker)
+                  end = text.index(end_marker, start)
+
+                  replacement = """    /**
+               * Register .cs3 DEX extensions without downloading them.
+               *
+               * External repositories act as catalogs. A provider's .cs3 payload is downloaded
+               * only after the user explicitly chooses to install that provider from the TV UI.
+               */
+              private suspend fun downloadDexExtensions(
+                  repoId: String,
+                  plugins: List<ExternalPluginEntry>
+              ) = withContext(Dispatchers.IO) {
+                  val existingScrapers = dataStore.scrapers.first().toMutableList()
+                  val previousForRepo = existingScrapers.filter {
+                      it.repositoryId == repoId && it.type == RepositoryType.EXTERNAL_DEX
+                  }
+                  val previousById = previousForRepo.associateBy { it.id }
+                  val incomingIds = mutableSetOf<String>()
+                  val registered = mutableListOf<ScraperInfo>()
+
+                  plugins.forEach { plugin ->
+                      val scraperId = "$repoId:${plugin.internalName}"
+                      incomingIds += scraperId
+
+                      val supportedTypes = plugin.tvTypes
+                          ?.mapNotNull { tvTypeFromString(it) }
+                          ?.map { it.toNuvioType() }
+                          ?.distinct()
+                          ?.ifEmpty { listOf("movie", "tv") }
+                          ?: listOf("movie", "tv")
+
+                      val previous = previousById[scraperId]
+                      val installed = externalExtensionLoader.isExtensionInstalled(scraperId)
+
+                      registered += ScraperInfo(
+                          id = scraperId,
+                          repositoryId = repoId,
+                          name = plugin.name,
+                          description = plugin.description ?: "",
+                          version = plugin.version.toString(),
+                          filename = plugin.url,
+                          supportedTypes = supportedTypes,
+                          enabled = previous?.enabled == true && installed && plugin.status == 1,
+                          manifestEnabled = plugin.status == 1,
+                          logo = plugin.iconUrl,
+                          contentLanguage = emptyList(),
+                          formats = null,
+                          type = RepositoryType.EXTERNAL_DEX
+                      )
+                  }
+
+                  previousForRepo
+                      .filter { it.id !in incomingIds }
+                      .forEach { stale ->
+                          externalExtensionLoader.deleteExtension(stale.id)
+                      }
+
+                  existingScrapers.removeAll {
+                      it.repositoryId == repoId && it.type == RepositoryType.EXTERNAL_DEX
+                  }
+                  existingScrapers.addAll(registered)
+                  dataStore.saveScrapers(existingScrapers)
+
+                  val installedCount = registered.count {
+                      externalExtensionLoader.isExtensionInstalled(it.id)
+                  }
+                  Log.d(
+                      TAG,
+                      "Registered ${registered.size} CloudStream providers for repo $repoId; installed=$installedCount"
+                  )
+              }
+          """
+                  text = text[:start] + replacement + text[end:]
+
+              if "suspend fun installExternalScraper(scraperId: String)" not in text:
+                  marker = """    /**
+               * Toggle scraper enabled state
+               */
+          """
+                  require(text, marker, "toggle scraper comment")
+                  addition = """    /**
+               * Whether the selected external CloudStream provider is installed on disk.
+               */
+              fun isExternalScraperInstalled(scraperId: String): Boolean =
+                  externalExtensionLoader.isExtensionInstalled(scraperId)
+
+              /**
+               * Download exactly one external CloudStream provider.
+               * Installation and enabled state are intentionally separate.
+               */
+              suspend fun installExternalScraper(scraperId: String): Result<Unit> =
+                  withContext(Dispatchers.IO) {
+                      try {
+                          val scraper = dataStore.scrapers.first().firstOrNull { it.id == scraperId }
+                              ?: return@withContext Result.failure(
+                                  IllegalArgumentException("Provider not found")
+                              )
+
+                          if (scraper.type != RepositoryType.EXTERNAL_DEX) {
+                              return@withContext Result.failure(
+                                  IllegalArgumentException("Provider is not a CloudStream DEX extension")
+                              )
+                          }
+
+                          if (externalExtensionLoader.isExtensionInstalled(scraper.id)) {
+                              return@withContext Result.success(Unit)
+                          }
+
+                          val file = externalExtensionLoader.downloadExtension(
+                              scraper.id,
+                              scraper.filename
+                          ) ?: return@withContext Result.failure(
+                              IllegalStateException("Extension download failed")
+                          )
+
+                          externalExtensionLoader.evictCache(scraper.id)
+                          Log.d(TAG, "Installed CloudStream provider ${scraper.name}: ${file.length()} bytes")
+                          Result.success(Unit)
+                      } catch (e: Exception) {
+                          Log.e(TAG, "Failed to install external provider $scraperId: ${e.message}", e)
+                          Result.failure(e)
+                      }
+                  }
+
+              /**
+               * Remove one installed external CloudStream provider and disable it.
+               */
+              suspend fun uninstallExternalScraper(scraperId: String): Result<Unit> =
+                  withContext(Dispatchers.IO) {
+                      try {
+                          val scraper = dataStore.scrapers.first().firstOrNull { it.id == scraperId }
+                              ?: return@withContext Result.failure(
+                                  IllegalArgumentException("Provider not found")
+                              )
+
+                          if (scraper.type != RepositoryType.EXTERNAL_DEX) {
+                              return@withContext Result.failure(
+                                  IllegalArgumentException("Provider is not a CloudStream DEX extension")
+                              )
+                          }
+
+                          externalExtensionLoader.deleteExtension(scraper.id)
+                          toggleScraper(scraper.id, false)
+                          Log.d(TAG, "Uninstalled CloudStream provider ${scraper.name}")
+                          Result.success(Unit)
+                      } catch (e: Exception) {
+                          Log.e(TAG, "Failed to uninstall external provider $scraperId: ${e.message}", e)
+                          Result.failure(e)
+                      }
+                  }
+
+          """
+                  text = text.replace(marker, addition + marker, 1)
+
+              toggle_start = "    suspend fun toggleScraper(scraperId: String, enabled: Boolean) {"
+              toggle_end_marker = "\n    /**\n     * Toggle all scrapers belonging to a repository"
+              require(text, toggle_start, "toggleScraper")
+              require(text, toggle_end_marker, "toggleScraper end")
+              start = text.index(toggle_start)
+              end = text.index(toggle_end_marker, start)
+              new_toggle = """    suspend fun toggleScraper(scraperId: String, enabled: Boolean) {
+                  val scraperList = dataStore.scrapers.first()
+                  val updatedScrapers = scraperList.map { scraper ->
+                      if (scraper.id != scraperId) {
+                          scraper
+                      } else if (
+                          enabled &&
+                          scraper.type == RepositoryType.EXTERNAL_DEX &&
+                          !externalExtensionLoader.isExtensionInstalled(scraper.id)
+                      ) {
+                          scraper.copy(enabled = false)
+                      } else {
+                          scraper.copy(enabled = enabled)
+                      }
+                  }
+                  dataStore.saveScrapers(updatedScrapers)
+              }
+          """
+              text = text[:start] + new_toggle + text[end:]
+
+              all_start = "    suspend fun toggleAllScrapersForRepo(repoId: String, enabled: Boolean) {"
+              all_end_marker = "\n    /**\n     * Toggle plugins globally"
+              require(text, all_start, "toggleAllScrapersForRepo")
+              require(text, all_end_marker, "toggleAllScrapersForRepo end")
+              start = text.index(all_start)
+              end = text.index(all_end_marker, start)
+              new_all = """    suspend fun toggleAllScrapersForRepo(repoId: String, enabled: Boolean) {
+                  val scraperList = dataStore.scrapers.first()
+                  val updatedScrapers = scraperList.map { scraper ->
+                      if (scraper.repositoryId != repoId) {
+                          scraper
+                      } else if (
+                          enabled &&
+                          scraper.type == RepositoryType.EXTERNAL_DEX &&
+                          !externalExtensionLoader.isExtensionInstalled(scraper.id)
+                      ) {
+                          scraper.copy(enabled = false)
+                      } else {
+                          scraper.copy(enabled = enabled)
+                      }
+                  }
+                  dataStore.saveScrapers(updatedScrapers)
+              }
+          """
+              text = text[:start] + new_all + text[end:]
+
+              write(path, text)
+
+
+          def patch_plugin_ui_state(repo: Path) -> None:
+              path = repo / "app" / "src" / "main" / "java" / "com" / "nuvio" / "tv" / "ui" / "screens" / "plugin" / "PluginUiState.kt"
+              text = read(path)
+
+              if "installedExternalScraperIds" not in text:
+                  old = "    val scrapers: List<ScraperInfo> = emptyList(),\n"
+                  require(text, old, "PluginUiState.scrapers")
+                  new = old + (
+                      "    val installedExternalScraperIds: Set<String> = emptySet(),\n"
+                      "    val busyExternalScraperIds: Set<String> = emptySet(),\n"
+                  )
+                  text = text.replace(old, new, 1)
+
+              if "data class InstallExternalScraper" not in text:
+                  old = "    data class ToggleScraper(val scraperId: String, val enabled: Boolean) : PluginUiEvent\n"
+                  require(text, old, "PluginUiEvent.ToggleScraper")
+                  new = old + (
+                      "    data class InstallExternalScraper(val scraperId: String) : PluginUiEvent\n"
+                      "    data class UninstallExternalScraper(val scraperId: String) : PluginUiEvent\n"
+                  )
+                  text = text.replace(old, new, 1)
+
+              write(path, text)
+
+
+          def patch_plugin_view_model(repo: Path) -> None:
+              path = repo / "app" / "src" / "main" / "java" / "com" / "nuvio" / "tv" / "ui" / "screens" / "plugin" / "PluginViewModel.kt"
+              text = read(path)
+
+              if "import com.nuvio.tv.domain.model.RepositoryType" not in text:
+                  marker = "import com.nuvio.tv.core.server.RepositoryConfigServer\n"
+                  require(text, marker, "RepositoryConfigServer import")
+                  text = text.replace(
+                      marker,
+                      marker + "import com.nuvio.tv.domain.model.RepositoryType\n",
+                      1,
+                  )
+
+              if "val installedExternalScraperIds = visibleScrapers" not in text:
+                  marker = """                val visibleScrapers = if (isReadOnly) {
+                              nextState.scrapers.filter { it.enabled }
+                          } else {
+                              nextState.scrapers
+                          }
+          """
+                  require(text, marker, "visibleScrapers collector")
+                  addition = marker + """                val installedExternalScraperIds = visibleScrapers
+                              .asSequence()
+                              .filter { it.type == RepositoryType.EXTERNAL_DEX }
+                              .filter { pluginManager.isExternalScraperInstalled(it.id) }
+                              .map { it.id }
+                              .toSet()
+          """
+                  text = text.replace(marker, addition, 1)
+
+                  copy_marker = "                        scrapers = visibleScrapers\n"
+                  require(text, copy_marker, "uiState scrapers copy")
+                  text = text.replace(
+                      copy_marker,
+                      "                        scrapers = visibleScrapers,\n"
+                      "                        installedExternalScraperIds = installedExternalScraperIds\n",
+                      1,
+                  )
+
+              if "is PluginUiEvent.InstallExternalScraper" not in text:
+                  marker = "            is PluginUiEvent.ToggleScraper -> toggleScraper(event.scraperId, event.enabled)\n"
+                  require(text, marker, "onEvent ToggleScraper")
+                  text = text.replace(
+                      marker,
+                      marker
+                      + "            is PluginUiEvent.InstallExternalScraper -> installExternalScraper(event.scraperId)\n"
+                      + "            is PluginUiEvent.UninstallExternalScraper -> uninstallExternalScraper(event.scraperId)\n",
+                      1,
+                  )
+
+              toggle_start = "    private fun toggleScraper(scraperId: String, enabled: Boolean) {"
+              toggle_end = "\n    private fun toggleAllScrapersForRepo(repoId: String, enabled: Boolean) {"
+              require(text, toggle_start, "ViewModel.toggleScraper")
+              require(text, toggle_end, "ViewModel.toggleAllScrapersForRepo")
+              start = text.index(toggle_start)
+              end = text.index(toggle_end, start)
+
+              replacement = """    private fun toggleScraper(scraperId: String, enabled: Boolean) {
+                  val scraper = _uiState.value.scrapers.firstOrNull { it.id == scraperId }
+
+                  if (
+                      enabled &&
+                      scraper?.type == RepositoryType.EXTERNAL_DEX &&
+                      scraper.id !in _uiState.value.installedExternalScraperIds
+                  ) {
+                      _uiState.update {
+                          it.copy(errorMessage = "Önce bu CloudStream sağlayıcısını kur.")
+                      }
+                      return
+                  }
+
+                  if (enabled && scraper != null && PluginSafety.isVideoEasyScraper(scraper.id, scraper.name, scraper.filename)) {
+                      _uiState.update {
+                          it.copy(
+                              pendingScraperEnable = PendingScraperEnableInfo(
+                                  scraperId = scraper.id,
+                                  scraperName = scraper.name
+                              )
+                          )
+                      }
+                      return
+                  }
+
+                  viewModelScope.launch {
+                      pluginManager.toggleScraper(scraperId, enabled)
+                  }
+              }
+
+              private fun installExternalScraper(scraperId: String) {
+                  val scraper = _uiState.value.scrapers.firstOrNull { it.id == scraperId }
+
+                  viewModelScope.launch {
+                      _uiState.update {
+                          it.copy(
+                              busyExternalScraperIds = it.busyExternalScraperIds + scraperId,
+                              errorMessage = null
+                          )
+                      }
+
+                      val result = pluginManager.installExternalScraper(scraperId)
+                      result.fold(
+                          onSuccess = {
+                              _uiState.update {
+                                  it.copy(
+                                      busyExternalScraperIds = it.busyExternalScraperIds - scraperId,
+                                      installedExternalScraperIds = it.installedExternalScraperIds + scraperId,
+                                      successMessage = "${scraper?.name ?: "CloudStream sağlayıcısı"} kuruldu. Kullanmak için etkinleştir."
+                                  )
+                              }
+                          },
+                          onFailure = { error ->
+                              _uiState.update {
+                                  it.copy(
+                                      busyExternalScraperIds = it.busyExternalScraperIds - scraperId,
+                                      errorMessage = "CloudStream kurulamadı: ${error.message ?: "bilinmeyen hata"}"
+                                  )
+                              }
+                          }
+                      )
+                  }
+              }
+
+              private fun uninstallExternalScraper(scraperId: String) {
+                  val scraper = _uiState.value.scrapers.firstOrNull { it.id == scraperId }
+
+                  viewModelScope.launch {
+                      _uiState.update {
+                          it.copy(
+                              busyExternalScraperIds = it.busyExternalScraperIds + scraperId,
+                              errorMessage = null
+                          )
+                      }
+
+                      val result = pluginManager.uninstallExternalScraper(scraperId)
+                      result.fold(
+                          onSuccess = {
+                              _uiState.update {
+                                  it.copy(
+                                      busyExternalScraperIds = it.busyExternalScraperIds - scraperId,
+                                      installedExternalScraperIds = it.installedExternalScraperIds - scraperId,
+                                      successMessage = "${scraper?.name ?: "CloudStream sağlayıcısı"} kaldırıldı."
+                                  )
+                              }
+                          },
+                          onFailure = { error ->
+                              _uiState.update {
+                                  it.copy(
+                                      busyExternalScraperIds = it.busyExternalScraperIds - scraperId,
+                                      errorMessage = "CloudStream kaldırılamadı: ${error.message ?: "bilinmeyen hata"}"
+                                  )
+                              }
+                          }
+                      )
+                  }
+              }
+          """
+              text = text[:start] + replacement + text[end:]
+
+              write(path, text)
+
+
+          def patch_plugin_screen(repo: Path) -> None:
+              path = repo / "app" / "src" / "main" / "java" / "com" / "nuvio" / "tv" / "ui" / "screens" / "plugin" / "PluginScreen.kt"
+              text = read(path)
+
+              if "import com.nuvio.tv.domain.model.RepositoryType" not in text:
+                  marker = "import com.nuvio.tv.domain.model.ScraperInfo\n"
+                  require(text, marker, "ScraperInfo import")
+                  text = text.replace(
+                      marker,
+                      marker + "import com.nuvio.tv.domain.model.RepositoryType\n",
+                      1,
+                  )
+
+              old_items = """                items(uiState.scrapers, key = { it.id }) { scraper ->
+                              ScraperCard(
+                                  scraper = scraper,
+                                  onToggle = { enabled ->
+                                      viewModel.onEvent(PluginUiEvent.ToggleScraper(scraper.id, enabled))
+                                  },
+                                  onTest = { viewModel.onEvent(PluginUiEvent.TestScraper(scraper.id)) },
+                                  isTesting = uiState.isTesting && uiState.testScraperId == scraper.id,
+                                  testResults = if (uiState.testScraperId == scraper.id) uiState.testResults else null,
+                                  testDiagnostics = if (uiState.testScraperId == scraper.id) uiState.testDiagnostics else null,
+                                  isReadOnly = viewModel.isReadOnly
+                              )
+                          }
+          """
+              if "ExternalDexInstallRow(" not in text:
+                  require(text, old_items, "scraper list item")
+                  new_items = """                items(uiState.scrapers, key = { it.id }) { scraper ->
+                              val isExternalDex = scraper.type == RepositoryType.EXTERNAL_DEX
+                              val isInstalled = !isExternalDex ||
+                                  scraper.id in uiState.installedExternalScraperIds
+                              val displayScraper = if (isExternalDex && !isInstalled) {
+                                  scraper.copy(enabled = false)
+                              } else {
+                                  scraper
+                              }
+
+                              Column(
+                                  verticalArrangement = Arrangement.spacedBy(NuvioTheme.spacing.sm)
+                              ) {
+                                  if (isExternalDex && !viewModel.isReadOnly) {
+                                      ExternalDexInstallRow(
+                                          scraper = scraper,
+                                          isInstalled = isInstalled,
+                                          isBusy = scraper.id in uiState.busyExternalScraperIds,
+                                          onInstall = {
+                                              viewModel.onEvent(
+                                                  PluginUiEvent.InstallExternalScraper(scraper.id)
+                                              )
+                                          },
+                                          onUninstall = {
+                                              viewModel.onEvent(
+                                                  PluginUiEvent.UninstallExternalScraper(scraper.id)
+                                              )
+                                          }
+                                      )
+                                  }
+
+                                  ScraperCard(
+                                      scraper = displayScraper,
+                                      onToggle = { enabled ->
+                                          viewModel.onEvent(
+                                              PluginUiEvent.ToggleScraper(scraper.id, enabled)
+                                          )
+                                      },
+                                      onTest = {
+                                          viewModel.onEvent(PluginUiEvent.TestScraper(scraper.id))
+                                      },
+                                      isTesting = uiState.isTesting &&
+                                          uiState.testScraperId == scraper.id,
+                                      testResults = if (uiState.testScraperId == scraper.id) {
+                                          uiState.testResults
+                                      } else {
+                                          null
+                                      },
+                                      testDiagnostics = if (uiState.testScraperId == scraper.id) {
+                                          uiState.testDiagnostics
+                                      } else {
+                                          null
+                                      },
+                                      isReadOnly = viewModel.isReadOnly ||
+                                          (isExternalDex && !isInstalled)
+                                  )
+                              }
+                          }
+          """
+                  text = text.replace(old_items, new_items, 1)
+
+              if "private fun ExternalDexInstallRow(" not in text:
+                  marker = "@Composable\nprivate fun ScraperCard("
+                  require(text, marker, "ScraperCard composable")
+                  addition = """@Composable
+          private fun ExternalDexInstallRow(
+              scraper: ScraperInfo,
+              isInstalled: Boolean,
+              isBusy: Boolean,
+              onInstall: () -> Unit,
+              onUninstall: () -> Unit
+          ) {
+              Card(
+                  modifier = Modifier.fillMaxWidth(),
+                  colors = CardDefaults.cardColors(
+                      containerColor = NuvioTheme.colors.BackgroundElevated
+                  ),
+                  shape = RoundedCornerShape(NuvioTheme.radii.md)
+              ) {
+                  Row(
+                      modifier = Modifier
+                          .fillMaxWidth()
+                          .padding(horizontal = NuvioTheme.spacing.lg, vertical = NuvioTheme.spacing.md),
+                      horizontalArrangement = Arrangement.SpaceBetween,
+                      verticalAlignment = Alignment.CenterVertically
+                  ) {
+                      Column(modifier = Modifier.weight(1f)) {
+                          Text(
+                              text = if (isInstalled) {
+                                  "CloudStream: Kurulu"
+                              } else {
+                                  "CloudStream: Kurulu değil"
+                              },
+                              style = MaterialTheme.typography.titleSmall,
+                              color = if (isInstalled) {
+                                  NuvioTheme.colors.Success
+                              } else {
+                                  NuvioTheme.colors.TextSecondary
+                              }
+                          )
+                          Text(
+                              text = if (isInstalled) {
+                                  "${scraper.name} cihazda yüklü."
+                              } else {
+                                  "Yalnızca ${scraper.name} sağlayıcısını yükle."
+                              },
+                              style = MaterialTheme.typography.bodySmall,
+                              color = NuvioTheme.colors.TextSecondary
+                          )
+                      }
+
+                      Spacer(modifier = Modifier.width(NuvioTheme.spacing.lg))
+
+                      Button(
+                          onClick = {
+                              if (isInstalled) onUninstall() else onInstall()
+                          },
+                          enabled = !isBusy,
+                          colors = ButtonDefaults.colors(
+                              containerColor = NuvioTheme.colors.Surface,
+                              contentColor = NuvioTheme.colors.TextPrimary,
+                              focusedContainerColor = NuvioTheme.colors.FocusBackground,
+                              focusedContentColor = if (isInstalled) {
+                                  NuvioTheme.colors.Error
+                              } else {
+                                  NuvioTheme.colors.Primary
+                              }
+                          ),
+                          shape = ButtonDefaults.shape(
+                              RoundedCornerShape(NuvioTheme.radii.md)
+                          )
+                      ) {
+                          if (isBusy) {
+                              LoadingIndicator(modifier = Modifier.size(18.dp))
+                          } else {
+                              Text(if (isInstalled) "Kaldır" else "Kur")
+                          }
+                      }
+                  }
+              }
+          }
+
+          """
+                  text = text.replace(marker, addition + marker, 1)
+
+              write(path, text)
+
+
+          def main() -> None:
+              repo = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
+              if not (repo / "app").exists():
+                  fail(f"{repo} does not look like the NuvioTV repository root")
+
+              patch_build_gradle(repo)
+              patch_external_extension_loader(repo)
+              patch_plugin_manager(repo)
+              patch_plugin_ui_state(repo)
+              patch_plugin_view_model(repo)
+              patch_plugin_screen(repo)
+
+              print("[Nuvio CS patch] Done.")
+              print("[Nuvio CS patch] applicationId: com.nuvio.tv.cs")
+              print("[Nuvio CS patch] CloudStream repos are catalog-only until individual install.")
+              print("[Nuvio CS patch] Build with: ./gradlew :app:assembleFullDebug")
+
+
+          if __name__ == "__main__":
+              main()
+          PY_PATCH
+
+      - name: Prepare CI signing key
+        run: |
+          keytool -genkeypair \
+            -v \
+            -keystore "$RUNNER_TEMP/nuvio-cs-ci.jks" \
+            -storepass android \
+            -alias androiddebugkey \
+            -keypass android \
+            -dname "CN=Nuvio CS CI,O=Nuvio CS,C=TR" \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000
+
+          {
+            echo "NUVIO_RELEASE_STORE_FILE=$RUNNER_TEMP/nuvio-cs-ci.jks"
+            echo "NUVIO_RELEASE_KEY_ALIAS=androiddebugkey"
+            echo "NUVIO_RELEASE_KEY_PASSWORD=android"
+            echo "NUVIO_RELEASE_STORE_PASSWORD=android"
+          } >> "$GITHUB_ENV"
+
+      - name: Build fullDebug APK
+        run: |
+          chmod +x gradlew
+          ./gradlew :app:assembleFullDebug --stacktrace
+
+      - name: Prepare artifact
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/full/debug/app-full-universal-debug.apk \
+            dist/Nuvio-CS-TV-CloudStream-Selective.apk
+          sha256sum dist/Nuvio-CS-TV-CloudStream-Selective.apk \
+            > dist/Nuvio-CS-TV-CloudStream-Selective.apk.sha256
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nuvio-CS-TV-CloudStream-Selective
+          path: |
+            dist/Nuvio-CS-TV-CloudStream-Selective.apk
+            dist/Nuvio-CS-TV-CloudStream-Selective.apk.sha256
+          if-no-files-found: error
+          retention-days: 14
