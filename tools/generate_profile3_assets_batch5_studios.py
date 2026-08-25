@@ -7,7 +7,7 @@ ASSETS = [
     ("production-studios-movies", "neon", ["neon-city"], ((5,9,18),(47,19,52))),
     ("production-studios-movies", "studiocanal", ["city","landscape"], ((18,42,59),(91,93,80))),
     ("production-studios-movies", "pathe", ["period"], ((46,35,31),(135,89,55))),
-    ("production-studios-movies", "working-title-films", ["indie"], ((20,31,42),(111,79,60))),
+    ("production-studios-movies", "working-title-films", ["screens"], ((20,31,42),(111,79,60))),
     ("production-studios-movies", "toho", ["city"], ((18,24,31),(97,66,52))),
     ("production-studios-movies", "cj-enm-entertainment", ["city","screens"], ((16,30,42),(68,76,102))),
     ("production-studios-movies", "bkm-film", ["city","group"], ((24,31,38),(111,71,49))),
