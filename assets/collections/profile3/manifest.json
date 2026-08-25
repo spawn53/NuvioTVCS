@@ -1,0 +1,495 @@
+{
+  "count": 70,
+  "assets": [
+    {
+      "section": "genres",
+      "slug": "action-adventure",
+      "variant": "cover",
+      "path": "assets/collections/profile3/genres/action-adventure/action-adventure-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/genres/action-adventure/action-adventure-cover.webp"
+    },
+    {
+      "section": "genres",
+      "slug": "action-adventure",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/genres/action-adventure/action-adventure-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/genres/action-adventure/action-adventure-backdrop.webp"
+    },
+    {
+      "section": "genres",
+      "slug": "history-period",
+      "variant": "cover",
+      "path": "assets/collections/profile3/genres/history-period/history-period-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/genres/history-period/history-period-cover.webp"
+    },
+    {
+      "section": "genres",
+      "slug": "history-period",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/genres/history-period/history-period-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/genres/history-period/history-period-backdrop.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "cerebral-thought-provoking",
+      "variant": "cover",
+      "path": "assets/collections/profile3/moods-and-vibes/cerebral-thought-provoking/cerebral-thought-provoking-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/cerebral-thought-provoking/cerebral-thought-provoking-cover.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "cerebral-thought-provoking",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/moods-and-vibes/cerebral-thought-provoking/cerebral-thought-provoking-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/cerebral-thought-provoking/cerebral-thought-provoking-backdrop.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "atmospheric",
+      "variant": "cover",
+      "path": "assets/collections/profile3/moods-and-vibes/atmospheric/atmospheric-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/atmospheric/atmospheric-cover.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "atmospheric",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/moods-and-vibes/atmospheric/atmospheric-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/atmospheric/atmospheric-backdrop.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "suspenseful-intense",
+      "variant": "cover",
+      "path": "assets/collections/profile3/moods-and-vibes/suspenseful-intense/suspenseful-intense-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/suspenseful-intense/suspenseful-intense-cover.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "suspenseful-intense",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/moods-and-vibes/suspenseful-intense/suspenseful-intense-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/suspenseful-intense/suspenseful-intense-backdrop.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "melancholic-bittersweet",
+      "variant": "cover",
+      "path": "assets/collections/profile3/moods-and-vibes/melancholic-bittersweet/melancholic-bittersweet-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/melancholic-bittersweet/melancholic-bittersweet-cover.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "melancholic-bittersweet",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/moods-and-vibes/melancholic-bittersweet/melancholic-bittersweet-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/melancholic-bittersweet/melancholic-bittersweet-backdrop.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "weird-strange",
+      "variant": "cover",
+      "path": "assets/collections/profile3/moods-and-vibes/weird-strange/weird-strange-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/weird-strange/weird-strange-cover.webp"
+    },
+    {
+      "section": "moods-and-vibes",
+      "slug": "weird-strange",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/moods-and-vibes/weird-strange/weird-strange-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/moods-and-vibes/weird-strange/weird-strange-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "artificial-intelligence",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/artificial-intelligence/artificial-intelligence-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/artificial-intelligence/artificial-intelligence-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "artificial-intelligence",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/artificial-intelligence/artificial-intelligence-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/artificial-intelligence/artificial-intelligence-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "parallel-worlds",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/parallel-worlds/parallel-worlds-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/parallel-worlds/parallel-worlds-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "parallel-worlds",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/parallel-worlds/parallel-worlds-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/parallel-worlds/parallel-worlds-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "alternate-reality",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/alternate-reality/alternate-reality-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/alternate-reality/alternate-reality-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "alternate-reality",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/alternate-reality/alternate-reality-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/alternate-reality/alternate-reality-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "dystopia",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/dystopia/dystopia-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/dystopia/dystopia-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "dystopia",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/dystopia/dystopia-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/dystopia/dystopia-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "post-apocalyptic",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/post-apocalyptic/post-apocalyptic-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/post-apocalyptic/post-apocalyptic-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "post-apocalyptic",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/post-apocalyptic/post-apocalyptic-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/post-apocalyptic/post-apocalyptic-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "cyberpunk",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/cyberpunk/cyberpunk-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/cyberpunk/cyberpunk-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "cyberpunk",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/cyberpunk/cyberpunk-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/cyberpunk/cyberpunk-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "aliens-first-contact",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/aliens-first-contact/aliens-first-contact-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/aliens-first-contact/aliens-first-contact-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "aliens-first-contact",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/aliens-first-contact/aliens-first-contact-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/aliens-first-contact/aliens-first-contact-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "human-vs-technology",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/human-vs-technology/human-vs-technology-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/human-vs-technology/human-vs-technology-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "human-vs-technology",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/human-vs-technology/human-vs-technology-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/human-vs-technology/human-vs-technology-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "conspiracy",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/conspiracy/conspiracy-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/conspiracy/conspiracy-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "conspiracy",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/conspiracy/conspiracy-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/conspiracy/conspiracy-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "heist",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/heist/heist-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/heist/heist-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "heist",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/heist/heist-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/heist/heist-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "prison-escape",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/prison-escape/prison-escape-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/prison-escape/prison-escape-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "prison-escape",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/prison-escape/prison-escape-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/prison-escape/prison-escape-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "serial-killers",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/serial-killers/serial-killers-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/serial-killers/serial-killers-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "serial-killers",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/serial-killers/serial-killers-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/serial-killers/serial-killers-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "organized-crime",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/organized-crime/organized-crime-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/organized-crime/organized-crime-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "organized-crime",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/organized-crime/organized-crime-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/organized-crime/organized-crime-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "political-intrigue",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/political-intrigue/political-intrigue-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/political-intrigue/political-intrigue-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "political-intrigue",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/political-intrigue/political-intrigue-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/political-intrigue/political-intrigue-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "cults-secret-societies",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/cults-secret-societies/cults-secret-societies-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/cults-secret-societies/cults-secret-societies-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "cults-secret-societies",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/cults-secret-societies/cults-secret-societies-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/cults-secret-societies/cults-secret-societies-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "survival",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/survival/survival-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/survival/survival-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "survival",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/survival/survival-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/survival/survival-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "disaster",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/disaster/disaster-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/disaster/disaster-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "disaster",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/disaster/disaster-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/disaster/disaster-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "lost-stranded",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/lost-stranded/lost-stranded-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/lost-stranded/lost-stranded-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "lost-stranded",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/lost-stranded/lost-stranded-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/lost-stranded/lost-stranded-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "memory-identity",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/memory-identity/memory-identity-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/memory-identity/memory-identity-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "memory-identity",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/memory-identity/memory-identity-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/memory-identity/memory-identity-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "obsession",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/obsession/obsession-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/obsession/obsession-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "obsession",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/obsession/obsession-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/obsession/obsession-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "hidden-identity",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/hidden-identity/hidden-identity-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/hidden-identity/hidden-identity-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "hidden-identity",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/hidden-identity/hidden-identity-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/hidden-identity/hidden-identity-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "dreams-reality",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/dreams-reality/dreams-reality-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/dreams-reality/dreams-reality-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "dreams-reality",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/dreams-reality/dreams-reality-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/dreams-reality/dreams-reality-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "family-secrets",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/family-secrets/family-secrets-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/family-secrets/family-secrets-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "family-secrets",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/family-secrets/family-secrets-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/family-secrets/family-secrets-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "found-family",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/found-family/found-family-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/found-family/found-family-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "found-family",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/found-family/found-family-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/found-family/found-family-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "redemption",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/redemption/redemption-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/redemption/redemption-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "redemption",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/redemption/redemption-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/redemption/redemption-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "forbidden-love",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/forbidden-love/forbidden-love-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/forbidden-love/forbidden-love-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "forbidden-love",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/forbidden-love/forbidden-love-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/forbidden-love/forbidden-love-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "mythology",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/mythology/mythology-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/mythology/mythology-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "mythology",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/mythology/mythology-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/mythology/mythology-backdrop.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "zombies",
+      "variant": "cover",
+      "path": "assets/collections/profile3/themes/zombies/zombies-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/zombies/zombies-cover.webp"
+    },
+    {
+      "section": "themes",
+      "slug": "zombies",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/themes/zombies/zombies-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/themes/zombies/zombies-backdrop.webp"
+    }
+  ]
+}
