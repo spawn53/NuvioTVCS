@@ -1,0 +1,159 @@
+{
+  "count": 22,
+  "assets": [
+    {
+      "section": "kids-family",
+      "slug": "kids-adventure",
+      "variant": "cover",
+      "path": "assets/collections/profile3/kids-family/kids-adventure/kids-adventure-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/kids-adventure/kids-adventure-cover.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "kids-adventure",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/kids-family/kids-adventure/kids-adventure-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/kids-adventure/kids-adventure-backdrop.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "animation-favorites",
+      "variant": "cover",
+      "path": "assets/collections/profile3/kids-family/animation-favorites/animation-favorites-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/animation-favorites/animation-favorites-cover.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "animation-favorites",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/kids-family/animation-favorites/animation-favorites-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/animation-favorites/animation-favorites-backdrop.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "learning-educational",
+      "variant": "cover",
+      "path": "assets/collections/profile3/kids-family/learning-educational/learning-educational-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/learning-educational/learning-educational-cover.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "learning-educational",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/kids-family/learning-educational/learning-educational-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/learning-educational/learning-educational-backdrop.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "feel-good-family",
+      "variant": "cover",
+      "path": "assets/collections/profile3/kids-family/feel-good-family/feel-good-family-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/feel-good-family/feel-good-family-cover.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "feel-good-family",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/kids-family/feel-good-family/feel-good-family-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/feel-good-family/feel-good-family-backdrop.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "fantasy-magic",
+      "variant": "cover",
+      "path": "assets/collections/profile3/kids-family/fantasy-magic/fantasy-magic-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/fantasy-magic/fantasy-magic-cover.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "fantasy-magic",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/kids-family/fantasy-magic/fantasy-magic-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/fantasy-magic/fantasy-magic-backdrop.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "family-classics",
+      "variant": "cover",
+      "path": "assets/collections/profile3/kids-family/family-classics/family-classics-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/family-classics/family-classics-cover.webp"
+    },
+    {
+      "section": "kids-family",
+      "slug": "family-classics",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/kids-family/family-classics/family-classics-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/kids-family/family-classics/family-classics-backdrop.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "trending-reality",
+      "variant": "cover",
+      "path": "assets/collections/profile3/reality-tv/trending-reality/trending-reality-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/trending-reality/trending-reality-cover.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "trending-reality",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/reality-tv/trending-reality/trending-reality-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/trending-reality/trending-reality-backdrop.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "competition-talent",
+      "variant": "cover",
+      "path": "assets/collections/profile3/reality-tv/competition-talent/competition-talent-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/competition-talent/competition-talent-cover.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "competition-talent",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/reality-tv/competition-talent/competition-talent-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/competition-talent/competition-talent-backdrop.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "travel-adventure",
+      "variant": "cover",
+      "path": "assets/collections/profile3/reality-tv/travel-adventure/travel-adventure-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/travel-adventure/travel-adventure-cover.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "travel-adventure",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/reality-tv/travel-adventure/travel-adventure-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/travel-adventure/travel-adventure-backdrop.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "social-experiment-survival",
+      "variant": "cover",
+      "path": "assets/collections/profile3/reality-tv/social-experiment-survival/social-experiment-survival-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/social-experiment-survival/social-experiment-survival-cover.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "social-experiment-survival",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/reality-tv/social-experiment-survival/social-experiment-survival-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/social-experiment-survival/social-experiment-survival-backdrop.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "docu-reality-real-lives",
+      "variant": "cover",
+      "path": "assets/collections/profile3/reality-tv/docu-reality-real-lives/docu-reality-real-lives-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/docu-reality-real-lives/docu-reality-real-lives-cover.webp"
+    },
+    {
+      "section": "reality-tv",
+      "slug": "docu-reality-real-lives",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/reality-tv/docu-reality-real-lives/docu-reality-real-lives-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/reality-tv/docu-reality-real-lives/docu-reality-real-lives-backdrop.webp"
+    }
+  ]
+}
