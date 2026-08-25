@@ -1,0 +1,327 @@
+{
+  "count": 46,
+  "assets": [
+    {
+      "section": "legendary-directors",
+      "slug": "nuri-bilge-ceylan",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/nuri-bilge-ceylan/nuri-bilge-ceylan-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/nuri-bilge-ceylan/nuri-bilge-ceylan-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "nuri-bilge-ceylan",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/nuri-bilge-ceylan/nuri-bilge-ceylan-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/nuri-bilge-ceylan/nuri-bilge-ceylan-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "yilmaz-guney",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/yilmaz-guney/yilmaz-guney-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/yilmaz-guney/yilmaz-guney-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "yilmaz-guney",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/yilmaz-guney/yilmaz-guney-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/yilmaz-guney/yilmaz-guney-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "zeki-demirkubuz",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/zeki-demirkubuz/zeki-demirkubuz-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/zeki-demirkubuz/zeki-demirkubuz-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "zeki-demirkubuz",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/zeki-demirkubuz/zeki-demirkubuz-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/zeki-demirkubuz/zeki-demirkubuz-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "yesim-ustaoglu",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/yesim-ustaoglu/yesim-ustaoglu-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/yesim-ustaoglu/yesim-ustaoglu-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "yesim-ustaoglu",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/yesim-ustaoglu/yesim-ustaoglu-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/yesim-ustaoglu/yesim-ustaoglu-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "ingmar-bergman",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/ingmar-bergman/ingmar-bergman-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/ingmar-bergman/ingmar-bergman-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "ingmar-bergman",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/ingmar-bergman/ingmar-bergman-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/ingmar-bergman/ingmar-bergman-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "andrei-tarkovsky",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/andrei-tarkovsky/andrei-tarkovsky-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/andrei-tarkovsky/andrei-tarkovsky-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "andrei-tarkovsky",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/andrei-tarkovsky/andrei-tarkovsky-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/andrei-tarkovsky/andrei-tarkovsky-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "federico-fellini",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/federico-fellini/federico-fellini-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/federico-fellini/federico-fellini-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "federico-fellini",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/federico-fellini/federico-fellini-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/federico-fellini/federico-fellini-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "agnes-varda",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/agnes-varda/agnes-varda-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/agnes-varda/agnes-varda-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "agnes-varda",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/agnes-varda/agnes-varda-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/agnes-varda/agnes-varda-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "krzysztof-kieslowski",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/krzysztof-kieslowski/krzysztof-kieslowski-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/krzysztof-kieslowski/krzysztof-kieslowski-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "krzysztof-kieslowski",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/krzysztof-kieslowski/krzysztof-kieslowski-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/krzysztof-kieslowski/krzysztof-kieslowski-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "michael-haneke",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/michael-haneke/michael-haneke-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/michael-haneke/michael-haneke-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "michael-haneke",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/michael-haneke/michael-haneke-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/michael-haneke/michael-haneke-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "chantal-akerman",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/chantal-akerman/chantal-akerman-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/chantal-akerman/chantal-akerman-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "chantal-akerman",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/chantal-akerman/chantal-akerman-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/chantal-akerman/chantal-akerman-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "yasujiro-ozu",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/yasujiro-ozu/yasujiro-ozu-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/yasujiro-ozu/yasujiro-ozu-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "yasujiro-ozu",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/yasujiro-ozu/yasujiro-ozu-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/yasujiro-ozu/yasujiro-ozu-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "hirokazu-kore-eda",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/hirokazu-kore-eda/hirokazu-kore-eda-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/hirokazu-kore-eda/hirokazu-kore-eda-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "hirokazu-kore-eda",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/hirokazu-kore-eda/hirokazu-kore-eda-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/hirokazu-kore-eda/hirokazu-kore-eda-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "lee-chang-dong",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/lee-chang-dong/lee-chang-dong-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/lee-chang-dong/lee-chang-dong-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "lee-chang-dong",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/lee-chang-dong/lee-chang-dong-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/lee-chang-dong/lee-chang-dong-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "wong-kar-wai",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/wong-kar-wai/wong-kar-wai-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/wong-kar-wai/wong-kar-wai-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "wong-kar-wai",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/wong-kar-wai/wong-kar-wai-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/wong-kar-wai/wong-kar-wai-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "edward-yang",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/edward-yang/edward-yang-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/edward-yang/edward-yang-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "edward-yang",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/edward-yang/edward-yang-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/edward-yang/edward-yang-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "hou-hsiao-hsien",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/hou-hsiao-hsien/hou-hsiao-hsien-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/hou-hsiao-hsien/hou-hsiao-hsien-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "hou-hsiao-hsien",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/hou-hsiao-hsien/hou-hsiao-hsien-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/hou-hsiao-hsien/hou-hsiao-hsien-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "abbas-kiarostami",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/abbas-kiarostami/abbas-kiarostami-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/abbas-kiarostami/abbas-kiarostami-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "abbas-kiarostami",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/abbas-kiarostami/abbas-kiarostami-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/abbas-kiarostami/abbas-kiarostami-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "asghar-farhadi",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/asghar-farhadi/asghar-farhadi-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/asghar-farhadi/asghar-farhadi-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "asghar-farhadi",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/asghar-farhadi/asghar-farhadi-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/asghar-farhadi/asghar-farhadi-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "jafar-panahi",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/jafar-panahi/jafar-panahi-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/jafar-panahi/jafar-panahi-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "jafar-panahi",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/jafar-panahi/jafar-panahi-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/jafar-panahi/jafar-panahi-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "satyajit-ray",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/satyajit-ray/satyajit-ray-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/satyajit-ray/satyajit-ray-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "satyajit-ray",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/satyajit-ray/satyajit-ray-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/satyajit-ray/satyajit-ray-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "ousmane-sembene",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/ousmane-sembene/ousmane-sembene-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/ousmane-sembene/ousmane-sembene-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "ousmane-sembene",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/ousmane-sembene/ousmane-sembene-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/ousmane-sembene/ousmane-sembene-backdrop.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "lucrecia-martel",
+      "variant": "cover",
+      "path": "assets/collections/profile3/legendary-directors/lucrecia-martel/lucrecia-martel-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/lucrecia-martel/lucrecia-martel-cover.webp"
+    },
+    {
+      "section": "legendary-directors",
+      "slug": "lucrecia-martel",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/legendary-directors/lucrecia-martel/lucrecia-martel-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/legendary-directors/lucrecia-martel/lucrecia-martel-backdrop.webp"
+    }
+  ]
+}
