@@ -64,9 +64,37 @@ async function extractIdentifier(url) {
   };
 }
 
+async function validateStremThru(identifier) {
+  if (!identifier) return null;
+  const url = `https://stremthru.13377001.xyz/v0/meta/letterboxd/lists/${identifier}`;
+  const res = await fetch(url, {
+    redirect: 'follow',
+    headers: {'Accept': 'application/json', 'User-Agent': 'AIOMetadata/1.0'}
+  });
+  let body = null;
+  let parseError = null;
+  try {
+    body = await res.json();
+  } catch (e) {
+    parseError = e.message;
+  }
+  const items = body?.data?.items;
+  return {
+    url,
+    status: res.status,
+    ok: res.ok,
+    contentType: res.headers.get('content-type'),
+    title: body?.data?.title ?? null,
+    itemCount: Array.isArray(items) ? items.length : null,
+    sampleTitles: Array.isArray(items) ? items.slice(0, 5).map(x => x?.title ?? null) : [],
+    topLevelKeys: body && typeof body === 'object' ? Object.keys(body) : [],
+    parseError
+  };
+}
+
 const result = {
   generatedAt: new Date().toISOString(),
-  policy: 'Research only; no catalog IDs are committed unless x-letterboxd-identifier is returned by Letterboxd.',
+  policy: 'Research only; no catalog IDs are committed unless x-letterboxd-identifier is returned by Letterboxd and StremThru runtime succeeds.',
   efa: {},
   tiff: {}
 };
@@ -88,10 +116,12 @@ if (efaDiscovery.exact?.href) {
   }
   result.efa.extraction = result.efa.candidateExtractions.find(x => x.status === 200 && x.identifier) ?? null;
 }
+result.efa.runtime = await validateStremThru(result.efa.extraction?.identifier);
 
 const tiffUrl = 'https://letterboxd.com/alderwar/list/tiff-peoples-choice-award-winners-runners/';
 result.tiff.sourceUrl = tiffUrl;
 result.tiff.extraction = await extractIdentifier(tiffUrl);
+result.tiff.runtime = await validateStremThru(result.tiff.extraction?.identifier);
 
 await fs.mkdir('research', {recursive:true});
 await fs.writeFile(outPath, JSON.stringify(result, null, 2) + '\n', 'utf8');
