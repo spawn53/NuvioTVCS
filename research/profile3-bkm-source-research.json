@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-25T22:12:39.970Z",
-  "policy": "Accept only a numeric TMDB company ID found on public TMDB HTML near BKM identity and validated by a public TMDB company page.",
+  "generatedAt": "2026-08-25T22:14:48.774Z",
+  "policy": "Keep both genuine BKM TMDB company records if public company pages and filmography evidence show they represent different portions of the BKM catalogue.",
   "sources": [
     {
       "url": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
@@ -34,7 +34,7 @@
       "status": 200,
       "finalUrl": "https://www.themoviedb.org/movie/30634-organize-isler?language=tr-TR",
       "contentType": "text/html;charset=utf-8",
-      "htmlLength": 149793,
+      "htmlLength": 149795,
       "candidateCount": 0,
       "containsBkm": true
     },
@@ -43,7 +43,7 @@
       "status": 200,
       "finalUrl": "https://www.themoviedb.org/movie/57892-vizontele?language=tr-TR",
       "contentType": "text/html;charset=utf-8",
-      "htmlLength": 148439,
+      "htmlLength": 148441,
       "candidateCount": 0,
       "containsBkm": false
     }
@@ -292,123 +292,6 @@
   ],
   "validations": [
     {
-      "id": 228166,
-      "url": "https://www.themoviedb.org/company/228166?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/228166-baki-film/movie?language=tr-TR",
-      "title": "Bakı Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 72920,
-      "url": "https://www.themoviedb.org/company/72920?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/72920-bam-film/movie?language=tr-TR",
-      "title": "Bam Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 81801,
-      "url": "https://www.themoviedb.org/company/81801?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/81801-bkp-film/movie?language=tr-TR",
-      "title": "BKP Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 128724,
-      "url": "https://www.themoviedb.org/company/128724?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/128724-bkl-films/movie?language=tr-TR",
-      "title": "BKL Films tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 156890,
-      "url": "https://www.themoviedb.org/company/156890?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/156890-bkt-films/movie?language=tr-TR",
-      "title": "BKT Films tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 26323,
-      "url": "https://www.themoviedb.org/company/26323?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/26323-km-film/movie?language=tr-TR",
-      "title": "KM Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 681,
-      "url": "https://www.themoviedb.org/company/681?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/681-dom-film/movie?language=tr-TR",
-      "title": "Dom Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 3275,
-      "url": "https://www.themoviedb.org/company/3275?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/3275-box-film/movie?language=tr-TR",
-      "title": "Box Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 172088,
-      "url": "https://www.themoviedb.org/company/172088?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/172088-bry-film/movie?language=tr-TR",
-      "title": "Bry film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 15794,
-      "url": "https://www.themoviedb.org/company/15794?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/15794-b-t-film/movie?language=tr-TR",
-      "title": "B&amp;T Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 163151,
-      "url": "https://www.themoviedb.org/company/163151?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/163151-blu-film/movie?language=tr-TR",
-      "title": "Blu Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 76906,
-      "url": "https://www.themoviedb.org/company/76906?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/76906-bwb-film/movie?language=tr-TR",
-      "title": "BWB Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
-      "id": 186674,
-      "url": "https://www.themoviedb.org/company/186674?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/186674-fkx-film/movie?language=tr-TR",
-      "title": "FKX Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
-    },
-    {
       "id": 15268,
       "url": "https://www.themoviedb.org/company/15268?language=tr-TR",
       "status": 200,
@@ -421,15 +304,6 @@
         "BKM"
       ],
       "containsBkm": true
-    },
-    {
-      "id": 288,
-      "url": "https://www.themoviedb.org/company/288?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/288-bbc-film/movie?language=tr-TR",
-      "title": "BBC Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [],
-      "containsBkm": false
     },
     {
       "id": 25350,
@@ -444,33 +318,253 @@
       "containsBkm": true
     }
   ],
-  "resolved": null,
-  "ambiguous": [
-    {
+  "filmographies": {
+    "15268": {
       "id": 15268,
-      "url": "https://www.themoviedb.org/company/15268?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR",
-      "title": "BKM Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [
-        "BKM Film",
-        "bkm",
-        "Beşiktaş Kültür Merkezi",
-        "BKM"
+      "slug": "bkm-film",
+      "pages": [
+        {
+          "page": 1,
+          "url": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR",
+          "status": 200,
+          "finalUrl": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR",
+          "htmlLength": 142050,
+          "parsedMovieLinks": 18
+        },
+        {
+          "page": 2,
+          "url": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR&page=2",
+          "status": 200,
+          "finalUrl": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR&page=2",
+          "htmlLength": 108356,
+          "parsedMovieLinks": 7
+        },
+        {
+          "page": 3,
+          "url": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR&page=3",
+          "status": 200,
+          "finalUrl": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR&page=3",
+          "htmlLength": 90830,
+          "parsedMovieLinks": 0
+        }
       ],
-      "containsBkm": true
+      "uniqueMovieCountParsed": 25,
+      "sample": [
+        {
+          "id": 52667,
+          "title": "Neşeli Hayat"
+        },
+        {
+          "id": 258310,
+          "title": "Patron Mutlu Son İstiyor"
+        },
+        {
+          "id": 101682,
+          "title": "Kurtuluş Son Durak"
+        },
+        {
+          "id": 48763,
+          "title": "Eyyvah Eyvah"
+        },
+        {
+          "id": 57892,
+          "title": "Vizontele"
+        },
+        {
+          "id": 27275,
+          "title": "G.O.R.A."
+        },
+        {
+          "id": 171160,
+          "title": "Kelebeğin Rüyası"
+        },
+        {
+          "id": 171158,
+          "title": "Hükümet Kadın"
+        },
+        {
+          "id": 109856,
+          "title": "Sen Kimsin?"
+        },
+        {
+          "id": 92834,
+          "title": "Vizontele Tuuba"
+        },
+        {
+          "id": 30634,
+          "title": "Organize İşler"
+        },
+        {
+          "id": 339954,
+          "title": "Sen Hiç Ateşböceği Gördün mü?"
+        },
+        {
+          "id": 337313,
+          "title": "Otogargara"
+        },
+        {
+          "id": 255156,
+          "title": "Hükümet Kadın 2"
+        },
+        {
+          "id": 314462,
+          "title": "Silsile"
+        },
+        {
+          "id": 67077,
+          "title": "Çınar Ağacı"
+        },
+        {
+          "id": 13296,
+          "title": "Hokkabaz"
+        },
+        {
+          "id": 265505,
+          "title": "Eyyvah Eyvah 3"
+        },
+        {
+          "id": 53325,
+          "title": "Eyyvah Eyvah 2"
+        },
+        {
+          "id": 66574,
+          "title": "Gişe Memuru"
+        }
+      ],
+      "targetChecks": {
+        "organizeIsler": true,
+        "vizontele": true,
+        "babaminKemani": false,
+        "aileArasinda": false
+      }
     },
-    {
+    "25350": {
       "id": 25350,
-      "url": "https://www.themoviedb.org/company/25350?language=tr-TR",
-      "status": 200,
-      "finalUrl": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR",
-      "title": "BKM tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
-      "bkmMatches": [
-        "BKM",
-        "bkm"
+      "slug": "bkm",
+      "pages": [
+        {
+          "page": 1,
+          "url": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR",
+          "status": 200,
+          "finalUrl": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR",
+          "htmlLength": 140580,
+          "parsedMovieLinks": 19
+        },
+        {
+          "page": 2,
+          "url": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR&page=2",
+          "status": 200,
+          "finalUrl": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR&page=2",
+          "htmlLength": 140129,
+          "parsedMovieLinks": 20
+        },
+        {
+          "page": 3,
+          "url": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR&page=3",
+          "status": 200,
+          "finalUrl": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR&page=3",
+          "htmlLength": 138572,
+          "parsedMovieLinks": 20
+        }
       ],
-      "containsBkm": true
+      "uniqueMovieCountParsed": 59,
+      "sample": [
+        {
+          "id": 477274,
+          "title": "Yol Arkadaşım"
+        },
+        {
+          "id": 1056177,
+          "title": "Bursa Bülbülü"
+        },
+        {
+          "id": 52667,
+          "title": "Neşeli Hayat"
+        },
+        {
+          "id": 391649,
+          "title": "Küçük Esnaf"
+        },
+        {
+          "id": 1052918,
+          "title": "Yılbaşı Gecesi"
+        },
+        {
+          "id": 393478,
+          "title": "Hayat Öpücüğü"
+        },
+        {
+          "id": 443486,
+          "title": "İstanbul Kırmızısı"
+        },
+        {
+          "id": 874948,
+          "title": "Kin"
+        },
+        {
+          "id": 429235,
+          "title": "Görümce"
+        },
+        {
+          "id": 603566,
+          "title": "Can Dostlar"
+        },
+        {
+          "id": 606413,
+          "title": "Aykut Enişte"
+        },
+        {
+          "id": 577990,
+          "title": "Organize İşler: Sazan Sarmalı"
+        },
+        {
+          "id": 566067,
+          "title": "Hedefim Sensin"
+        },
+        {
+          "id": 647121,
+          "title": "Karanlık Gece"
+        },
+        {
+          "id": 258310,
+          "title": "Patron Mutlu Son İstiyor"
+        },
+        {
+          "id": 101682,
+          "title": "Kurtuluş Son Durak"
+        },
+        {
+          "id": 522828,
+          "title": "Cici Babam"
+        },
+        {
+          "id": 920394,
+          "title": "Babamın Kemanı"
+        },
+        {
+          "id": 1056234,
+          "title": "Alice Müzikali"
+        },
+        {
+          "id": 48763,
+          "title": "Eyyvah Eyvah"
+        }
+      ],
+      "targetChecks": {
+        "organizeIsler": true,
+        "vizontele": true,
+        "babaminKemani": true,
+        "aileArasinda": true
+      }
     }
-  ]
+  },
+  "recommendation": {
+    "strategy": "two-company-union",
+    "companyIds": [
+      15268,
+      25350
+    ],
+    "reason": "TMDB maintains BKM Film and BKM as separate Turkey-linked company records. Using both avoids dropping legacy or current BKM titles.",
+    "safeImplementation": "two separate tmdb.discover.movie catalogs in the BKM Film folder; do not depend on undocumented filters."
+  }
 }
