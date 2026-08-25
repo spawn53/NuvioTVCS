@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-08-25T22:06:34.927Z",
+  "policy": "Research only; no catalog IDs are committed unless x-letterboxd-identifier is returned by Letterboxd.",
+  "efa": {
+    "discovery": {
+      "candidates": [],
+      "exact": null
+    }
+  },
+  "tiff": {
+    "sourceUrl": "https://letterboxd.com/alderwar/list/tiff-peoples-choice-award-winners-runners/",
+    "extraction": {
+      "requestedUrl": "https://letterboxd.com/alderwar/list/tiff-peoples-choice-award-winners-runners/",
+      "finalUrl": "https://letterboxd.com/alderwar/list/tiff-peoples-choice-award-winners-runners/",
+      "status": 200,
+      "method": "GET",
+      "identifier": "1fAdK",
+      "contentType": "text/html;charset=utf-8"
+    }
+  }
+}
