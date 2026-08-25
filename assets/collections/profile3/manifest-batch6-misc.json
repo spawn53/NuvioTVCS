@@ -1,0 +1,47 @@
+{
+  "count": 6,
+  "assets": [
+    {
+      "section": "based-on",
+      "slug": "manga",
+      "variant": "cover",
+      "path": "assets/collections/profile3/based-on/manga/manga-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/based-on/manga/manga-cover.webp"
+    },
+    {
+      "section": "based-on",
+      "slug": "manga",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/based-on/manga/manga-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/based-on/manga/manga-backdrop.webp"
+    },
+    {
+      "section": "based-on",
+      "slug": "stage-theatre",
+      "variant": "cover",
+      "path": "assets/collections/profile3/based-on/stage-theatre/stage-theatre-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/based-on/stage-theatre/stage-theatre-cover.webp"
+    },
+    {
+      "section": "based-on",
+      "slug": "stage-theatre",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/based-on/stage-theatre/stage-theatre-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/based-on/stage-theatre/stage-theatre-backdrop.webp"
+    },
+    {
+      "section": "holiday-specials",
+      "slug": "new-year",
+      "variant": "cover",
+      "path": "assets/collections/profile3/holiday-specials/new-year/new-year-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/holiday-specials/new-year/new-year-cover.webp"
+    },
+    {
+      "section": "holiday-specials",
+      "slug": "new-year",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/holiday-specials/new-year/new-year-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/holiday-specials/new-year/new-year-backdrop.webp"
+    }
+  ]
+}
