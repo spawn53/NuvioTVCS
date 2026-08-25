@@ -28,7 +28,7 @@ jobs:
       - name: Install Pillow
         run: pip install pillow
       - name: Generate batch 3 assets
-        run: python tools/generate_profile3_assets_batch3.py
+        run: PYTHONPATH=. python tools/generate_profile3_assets_batch3.py
       - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
