@@ -1,0 +1,39 @@
+name: Generate Profile 3 visual assets batch 2
+
+on:
+  push:
+    branches:
+      - profile3-visual-assets
+    paths:
+      - tools/generate_profile3_assets_batch2.py
+      - .github/workflows/generate-profile3-assets-batch2.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: python -m pip install --upgrade pillow
+      - name: Generate assets
+        run: python tools/generate_profile3_assets_batch2.py
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/collections/profile3
+          if git diff --cached --quiet; then
+            echo "No asset changes to commit"
+            exit 0
+          fi
+          git commit -m "Generate Profile 3 visual assets batch 2"
+          git push
