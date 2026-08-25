@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 
-const UA = 'Mozilla/5.0 (compatible; Profile3SourceResearch/1.0)';
+const UA = 'Mozilla/5.0 (compatible; Profile3SourceResearch/1.1)';
 const OUT = 'research/profile3-bkm-source-research.json';
 
 async function fetchText(url) {
@@ -45,21 +45,6 @@ function collectCompanyCandidates(html, sourceUrl) {
         seen.add(key);
       }
     }
-    const jsonPatterns = [
-      /"id"\s*:\s*(\d+)[\s\S]{0,500}?"name"\s*:\s*"([^"]*BKM[^"]*)"/gi,
-      /"name"\s*:\s*"([^"]*BKM[^"]*)"[\s\S]{0,500}?"id"\s*:\s*(\d+)/gi
-    ];
-    for (let pi=0; pi<jsonPatterns.length; pi++) {
-      for (const j of chunk.matchAll(jsonPatterns[pi])) {
-        const id = Number(pi===0 ? j[1] : j[2]);
-        const label = pi===0 ? j[2] : j[1];
-        const key = `${id}:${label}`;
-        if (!seen.has(key)) {
-          out.push({id,label,sourceUrl,method:'embedded-json'});
-          seen.add(key);
-        }
-      }
-    }
   }
   return out;
 }
@@ -67,9 +52,43 @@ function collectCompanyCandidates(html, sourceUrl) {
 async function validateCompany(id) {
   const url = `https://www.themoviedb.org/company/${id}?language=tr-TR`;
   const {res,text} = await fetchText(url);
-  const title = (text.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? '').replace(/<[^>]*>/g,' ').trim();
+  const title = decodeHtml((text.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? '').replace(/<[^>]*>/g,' '));
   const bkmMatches = [...text.matchAll(/BKM(?:\s+Film|\s+Yapım|\s+Production)?|Beşiktaş\s+Kültür\s+Merkezi|Besiktas\s+Kultur\s+Merkezi/gi)].map(x=>x[0]);
   return {id,url,status:res.status,finalUrl:res.url,title,bkmMatches:[...new Set(bkmMatches)].slice(0,10),containsBkm:bkmMatches.length>0};
+}
+
+function parseMovieLinks(html) {
+  const found = [];
+  const seen = new Set();
+  for (const m of html.matchAll(/href=["']\/movie\/(\d+)(?:-[^"']*)?["'][^>]*>([\s\S]{0,250}?)<\/a>/gi)) {
+    const id = Number(m[1]);
+    const title = decodeHtml(m[2].replace(/<[^>]*>/g,' '));
+    if (!title || seen.has(id)) continue;
+    seen.add(id);
+    found.push({id,title});
+  }
+  return found;
+}
+
+async function getFilmography(id, slug) {
+  const pages=[];
+  const all=[];
+  const seen=new Set();
+  for (let page=1; page<=3; page++) {
+    const suffix = page===1 ? '' : `&page=${page}`;
+    const url=`https://www.themoviedb.org/company/${id}-${slug}/movie?language=tr-TR${suffix}`;
+    const {res,text}=await fetchText(url);
+    const movies=parseMovieLinks(text);
+    pages.push({page,url,status:res.status,finalUrl:res.url,htmlLength:text.length,parsedMovieLinks:movies.length});
+    for (const m of movies) if (!seen.has(m.id)) { seen.add(m.id); all.push(m); }
+  }
+  const targetChecks={
+    organizeIsler:all.some(x=>x.id===30634 || /organize/i.test(x.title)),
+    vizontele:all.some(x=>x.id===57892 || /vizontele/i.test(x.title)),
+    babaminKemani:all.some(x=>/keman|violin/i.test(x.title)),
+    aileArasinda:all.some(x=>/aile/i.test(x.title))
+  };
+  return {id,slug,pages,uniqueMovieCountParsed:all.length,sample:all.slice(0,20),targetChecks};
 }
 
 const sourceUrls = [
@@ -82,8 +101,8 @@ const sourceUrls = [
 
 const result = {
   generatedAt:new Date().toISOString(),
-  policy:'Accept only a numeric TMDB company ID found on public TMDB HTML near BKM identity and validated by a public TMDB company page.',
-  sources:[], candidates:[], validations:[], resolved:null
+  policy:'Keep both genuine BKM TMDB company records if public company pages and filmography evidence show they represent different portions of the BKM catalogue.',
+  sources:[], candidates:[], validations:[], filmographies:{}, recommendation:null
 };
 
 for (const url of sourceUrls) {
@@ -97,20 +116,25 @@ for (const url of sourceUrls) {
   }
 }
 
-const uniqueIds=[...new Set(result.candidates.map(x=>x.id).filter(Number.isFinite))];
-for (const id of uniqueIds) {
+for (const id of [15268,25350]) {
   try { result.validations.push(await validateCompany(id)); }
   catch(e) { result.validations.push({id,error:e.message}); }
 }
 
-const strong = result.validations.filter(v=>v.status===200 && v.containsBkm);
-if (strong.length===1) {
-  const id=strong[0].id;
-  result.resolved={id,evidence:result.candidates.filter(c=>c.id===id),validation:strong[0]};
-} else if (strong.length>1) {
-  result.ambiguous=strong;
+result.filmographies['15268']=await getFilmography(15268,'bkm-film');
+result.filmographies['25350']=await getFilmography(25350,'bkm');
+
+const v15268=result.validations.find(x=>x.id===15268);
+const v25350=result.validations.find(x=>x.id===25350);
+if (v15268?.status===200 && v15268?.containsBkm && v25350?.status===200 && v25350?.containsBkm) {
+  result.recommendation={
+    strategy:'two-company-union',
+    companyIds:[15268,25350],
+    reason:'TMDB maintains BKM Film and BKM as separate Turkey-linked company records. Using both avoids dropping legacy or current BKM titles.',
+    safeImplementation:'two separate tmdb.discover.movie catalogs in the BKM Film folder; do not depend on undocumented filters.'
+  };
 }
 
 await fs.mkdir('research',{recursive:true});
 await fs.writeFile(OUT,JSON.stringify(result,null,2)+'\n','utf8');
-console.log(JSON.stringify(result,null,2));
+console.log(JSON.stringify({validations:result.validations,filmographies:result.filmographies,recommendation:result.recommendation},null,2));
