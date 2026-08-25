@@ -1,0 +1,476 @@
+{
+  "generatedAt": "2026-08-25T22:12:39.970Z",
+  "policy": "Accept only a numeric TMDB company ID found on public TMDB HTML near BKM identity and validated by a public TMDB company page.",
+  "sources": [
+    {
+      "url": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "contentType": "text/html;charset=utf-8",
+      "htmlLength": 129385,
+      "candidateCount": 19,
+      "containsBkm": true
+    },
+    {
+      "url": "https://www.themoviedb.org/search/company?query=Be%C5%9Fikta%C5%9F%20K%C3%BClt%C3%BCr%20Merkezi&language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/search/company?query=Be%C5%9Fikta%C5%9F%20K%C3%BClt%C3%BCr%20Merkezi&language=tr-TR",
+      "contentType": "text/html;charset=utf-8",
+      "htmlLength": 90307,
+      "candidateCount": 2,
+      "containsBkm": true
+    },
+    {
+      "url": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "contentType": "text/html;charset=utf-8",
+      "htmlLength": 128205,
+      "candidateCount": 19,
+      "containsBkm": true
+    },
+    {
+      "url": "https://www.themoviedb.org/movie/30634-organize-isler?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/movie/30634-organize-isler?language=tr-TR",
+      "contentType": "text/html;charset=utf-8",
+      "htmlLength": 149793,
+      "candidateCount": 0,
+      "containsBkm": true
+    },
+    {
+      "url": "https://www.themoviedb.org/movie/57892-vizontele?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/movie/57892-vizontele?language=tr-TR",
+      "contentType": "text/html;charset=utf-8",
+      "htmlLength": 148439,
+      "candidateCount": 0,
+      "containsBkm": false
+    }
+  ],
+  "candidates": [
+    {
+      "id": 228166,
+      "label": "Bakı Film AZ",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 72920,
+      "label": "Bam Film TR",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 81801,
+      "label": "BKP Film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 128724,
+      "label": "BKL Films",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 156890,
+      "label": "BKT Films",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 26323,
+      "label": "KM Film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 681,
+      "label": "Dom Film DE",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 3275,
+      "label": "Box Film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 172088,
+      "label": "Bry film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 15794,
+      "label": "B&T Film DE",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 163151,
+      "label": "Blu Film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 76906,
+      "label": "BWB Film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 186674,
+      "label": "FKX Film",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 15268,
+      "label": "BKM",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 228166,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 72920,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 81801,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 186674,
+      "label": "BKM",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 288,
+      "label": "BKM",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 15268,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=Be%C5%9Fikta%C5%9F%20K%C3%BClt%C3%BCr%20Merkezi&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 25350,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search/company?query=Be%C5%9Fikta%C5%9F%20K%C3%BClt%C3%BCr%20Merkezi&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 228166,
+      "label": "Bakı Film AZ",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 72920,
+      "label": "Bam Film TR",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 81801,
+      "label": "BKP Film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 128724,
+      "label": "BKL Films",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 156890,
+      "label": "BKT Films",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 26323,
+      "label": "KM Film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 681,
+      "label": "Dom Film DE",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 3275,
+      "label": "Box Film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 172088,
+      "label": "Bry film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 15794,
+      "label": "B&T Film DE",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 163151,
+      "label": "Blu Film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 76906,
+      "label": "BWB Film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 186674,
+      "label": "FKX Film",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "company-link"
+    },
+    {
+      "id": 15268,
+      "label": "BKM",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 228166,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 72920,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 81801,
+      "label": "bkm",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 186674,
+      "label": "BKM",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    },
+    {
+      "id": 288,
+      "label": "BKM",
+      "sourceUrl": "https://www.themoviedb.org/search?query=BKM%20Film&language=tr-TR",
+      "method": "near-bkm-text"
+    }
+  ],
+  "validations": [
+    {
+      "id": 228166,
+      "url": "https://www.themoviedb.org/company/228166?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/228166-baki-film/movie?language=tr-TR",
+      "title": "Bakı Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 72920,
+      "url": "https://www.themoviedb.org/company/72920?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/72920-bam-film/movie?language=tr-TR",
+      "title": "Bam Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 81801,
+      "url": "https://www.themoviedb.org/company/81801?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/81801-bkp-film/movie?language=tr-TR",
+      "title": "BKP Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 128724,
+      "url": "https://www.themoviedb.org/company/128724?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/128724-bkl-films/movie?language=tr-TR",
+      "title": "BKL Films tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 156890,
+      "url": "https://www.themoviedb.org/company/156890?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/156890-bkt-films/movie?language=tr-TR",
+      "title": "BKT Films tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 26323,
+      "url": "https://www.themoviedb.org/company/26323?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/26323-km-film/movie?language=tr-TR",
+      "title": "KM Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 681,
+      "url": "https://www.themoviedb.org/company/681?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/681-dom-film/movie?language=tr-TR",
+      "title": "Dom Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 3275,
+      "url": "https://www.themoviedb.org/company/3275?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/3275-box-film/movie?language=tr-TR",
+      "title": "Box Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 172088,
+      "url": "https://www.themoviedb.org/company/172088?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/172088-bry-film/movie?language=tr-TR",
+      "title": "Bry film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 15794,
+      "url": "https://www.themoviedb.org/company/15794?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/15794-b-t-film/movie?language=tr-TR",
+      "title": "B&amp;T Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 163151,
+      "url": "https://www.themoviedb.org/company/163151?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/163151-blu-film/movie?language=tr-TR",
+      "title": "Blu Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 76906,
+      "url": "https://www.themoviedb.org/company/76906?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/76906-bwb-film/movie?language=tr-TR",
+      "title": "BWB Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 186674,
+      "url": "https://www.themoviedb.org/company/186674?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/186674-fkx-film/movie?language=tr-TR",
+      "title": "FKX Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 15268,
+      "url": "https://www.themoviedb.org/company/15268?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR",
+      "title": "BKM Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [
+        "BKM Film",
+        "bkm",
+        "Beşiktaş Kültür Merkezi",
+        "BKM"
+      ],
+      "containsBkm": true
+    },
+    {
+      "id": 288,
+      "url": "https://www.themoviedb.org/company/288?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/288-bbc-film/movie?language=tr-TR",
+      "title": "BBC Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [],
+      "containsBkm": false
+    },
+    {
+      "id": 25350,
+      "url": "https://www.themoviedb.org/company/25350?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR",
+      "title": "BKM tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [
+        "BKM",
+        "bkm"
+      ],
+      "containsBkm": true
+    }
+  ],
+  "resolved": null,
+  "ambiguous": [
+    {
+      "id": 15268,
+      "url": "https://www.themoviedb.org/company/15268?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/15268-bkm-film/movie?language=tr-TR",
+      "title": "BKM Film tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [
+        "BKM Film",
+        "bkm",
+        "Beşiktaş Kültür Merkezi",
+        "BKM"
+      ],
+      "containsBkm": true
+    },
+    {
+      "id": 25350,
+      "url": "https://www.themoviedb.org/company/25350?language=tr-TR",
+      "status": 200,
+      "finalUrl": "https://www.themoviedb.org/company/25350-bkm/movie?language=tr-TR",
+      "title": "BKM tarafından çekilen filmler &#8212; The Movie Database (TMDB)",
+      "bkmMatches": [
+        "BKM",
+        "bkm"
+      ],
+      "containsBkm": true
+    }
+  ]
+}
