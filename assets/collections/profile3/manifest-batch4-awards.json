@@ -1,0 +1,131 @@
+{
+  "count": 18,
+  "assets": [
+    {
+      "section": "awards",
+      "slug": "venice-film-festival",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/venice-film-festival/venice-film-festival-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/venice-film-festival/venice-film-festival-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "venice-film-festival",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/venice-film-festival/venice-film-festival-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/venice-film-festival/venice-film-festival-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "berlin-international-film-festival",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/berlin-international-film-festival/berlin-international-film-festival-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/berlin-international-film-festival/berlin-international-film-festival-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "berlin-international-film-festival",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/berlin-international-film-festival/berlin-international-film-festival-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/berlin-international-film-festival/berlin-international-film-festival-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "bafta",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/bafta/bafta-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/bafta/bafta-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "bafta",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/bafta/bafta-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/bafta/bafta-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "critics-choice-awards",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/critics-choice-awards/critics-choice-awards-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/critics-choice-awards/critics-choice-awards-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "critics-choice-awards",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/critics-choice-awards/critics-choice-awards-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/critics-choice-awards/critics-choice-awards-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "independent-spirit-awards",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/independent-spirit-awards/independent-spirit-awards-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/independent-spirit-awards/independent-spirit-awards-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "independent-spirit-awards",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/independent-spirit-awards/independent-spirit-awards-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/independent-spirit-awards/independent-spirit-awards-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "european-film-awards",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/european-film-awards/european-film-awards-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/european-film-awards/european-film-awards-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "european-film-awards",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/european-film-awards/european-film-awards-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/european-film-awards/european-film-awards-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "cesar-awards",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/cesar-awards/cesar-awards-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/cesar-awards/cesar-awards-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "cesar-awards",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/cesar-awards/cesar-awards-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/cesar-awards/cesar-awards-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "sundance-film-festival",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/sundance-film-festival/sundance-film-festival-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/sundance-film-festival/sundance-film-festival-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "sundance-film-festival",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/sundance-film-festival/sundance-film-festival-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/sundance-film-festival/sundance-film-festival-backdrop.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "tiff-peoples-choice",
+      "variant": "cover",
+      "path": "assets/collections/profile3/awards/tiff-peoples-choice/tiff-peoples-choice-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/tiff-peoples-choice/tiff-peoples-choice-cover.webp"
+    },
+    {
+      "section": "awards",
+      "slug": "tiff-peoples-choice",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/awards/tiff-peoples-choice/tiff-peoples-choice-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/awards/tiff-peoples-choice/tiff-peoples-choice-backdrop.webp"
+    }
+  ]
+}
