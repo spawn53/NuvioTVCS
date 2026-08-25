@@ -1,0 +1,42 @@
+name: Generate Profile 3 Studios assets
+
+on:
+  push:
+    branches:
+      - profile3-visual-assets
+    paths:
+      - tools/generate_profile3_assets.py
+      - tools/generate_profile3_assets_batch5_studios.py
+      - .github/workflows/generate-profile3-assets-batch5-studios.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: profile3-visual-assets
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: pip install pillow
+      - name: Generate Studios assets
+        run: PYTHONPATH=. python tools/generate_profile3_assets_batch5_studios.py
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/collections/profile3
+          if git diff --cached --quiet; then
+            echo "No generated asset changes"
+            exit 0
+          fi
+          git commit -m "Generate Profile 3 Studios visual assets"
+          git push origin HEAD:profile3-visual-assets
