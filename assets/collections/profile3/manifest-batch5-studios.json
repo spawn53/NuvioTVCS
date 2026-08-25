@@ -1,0 +1,257 @@
+{
+  "count": 36,
+  "assets": [
+    {
+      "section": "production-studios-movies",
+      "slug": "dreamworks-animation",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/dreamworks-animation/dreamworks-animation-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/dreamworks-animation/dreamworks-animation-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "dreamworks-animation",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/dreamworks-animation/dreamworks-animation-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/dreamworks-animation/dreamworks-animation-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "neon",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/neon/neon-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/neon/neon-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "neon",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/neon/neon-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/neon/neon-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "studiocanal",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/studiocanal/studiocanal-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/studiocanal/studiocanal-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "studiocanal",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/studiocanal/studiocanal-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/studiocanal/studiocanal-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "pathe",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/pathe/pathe-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/pathe/pathe-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "pathe",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/pathe/pathe-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/pathe/pathe-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "working-title-films",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/working-title-films/working-title-films-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/working-title-films/working-title-films-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "working-title-films",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/working-title-films/working-title-films-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/working-title-films/working-title-films-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "toho",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/toho/toho-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/toho/toho-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "toho",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/toho/toho-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/toho/toho-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "cj-enm-entertainment",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/cj-enm-entertainment/cj-enm-entertainment-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/cj-enm-entertainment/cj-enm-entertainment-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "cj-enm-entertainment",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/cj-enm-entertainment/cj-enm-entertainment-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/cj-enm-entertainment/cj-enm-entertainment-backdrop.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "bkm-film",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-movies/bkm-film/bkm-film-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/bkm-film/bkm-film-cover.webp"
+    },
+    {
+      "section": "production-studios-movies",
+      "slug": "bkm-film",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-movies/bkm-film/bkm-film-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-movies/bkm-film/bkm-film-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "bbc-studios",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/bbc-studios/bbc-studios-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/bbc-studios/bbc-studios-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "bbc-studios",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/bbc-studios/bbc-studios-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/bbc-studios/bbc-studios-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "sky-studios",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/sky-studios/sky-studios-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/sky-studios/sky-studios-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "sky-studios",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/sky-studios/sky-studios-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/sky-studios/sky-studios-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "itv-studios",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/itv-studios/itv-studios-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/itv-studios/itv-studios-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "itv-studios",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/itv-studios/itv-studios-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/itv-studios/itv-studios-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "banijay",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/banijay/banijay-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/banijay/banijay-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "banijay",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/banijay/banijay-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/banijay/banijay-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "studio-dragon",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/studio-dragon/studio-dragon-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/studio-dragon/studio-dragon-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "studio-dragon",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/studio-dragon/studio-dragon-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/studio-dragon/studio-dragon-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "fifth-season",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/fifth-season/fifth-season-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/fifth-season/fifth-season-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "fifth-season",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/fifth-season/fifth-season-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/fifth-season/fifth-season-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "ay-yapim",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/ay-yapim/ay-yapim-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/ay-yapim/ay-yapim-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "ay-yapim",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/ay-yapim/ay-yapim-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/ay-yapim/ay-yapim-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "ogm-pictures",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/ogm-pictures/ogm-pictures-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/ogm-pictures/ogm-pictures-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "ogm-pictures",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/ogm-pictures/ogm-pictures-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/ogm-pictures/ogm-pictures-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "medyapim",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/medyapim/medyapim-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/medyapim/medyapim-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "medyapim",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/medyapim/medyapim-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/medyapim/medyapim-backdrop.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "tims-b",
+      "variant": "cover",
+      "path": "assets/collections/profile3/production-studios-series/tims-b/tims-b-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/tims-b/tims-b-cover.webp"
+    },
+    {
+      "section": "production-studios-series",
+      "slug": "tims-b",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/production-studios-series/tims-b/tims-b-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/production-studios-series/tims-b/tims-b-backdrop.webp"
+    }
+  ]
+}
