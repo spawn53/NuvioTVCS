@@ -37,3 +37,4 @@ jobs:
           fi
           git commit -m "Generate Profile 3 visual assets batch 2"
           git push
+# trigger-v2
