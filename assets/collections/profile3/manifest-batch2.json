@@ -1,0 +1,201 @@
+{
+  "count": 28,
+  "assets": [
+    {
+      "section": "streaming-services",
+      "slug": "turkiye-streaming",
+      "variant": "cover",
+      "path": "assets/collections/profile3/streaming-services/turkiye-streaming/turkiye-streaming-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/streaming-services/turkiye-streaming/turkiye-streaming-cover.webp"
+    },
+    {
+      "section": "streaming-services",
+      "slug": "turkiye-streaming",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/streaming-services/turkiye-streaming/turkiye-streaming-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/streaming-services/turkiye-streaming/turkiye-streaming-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "british-irish-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/british-irish-cinema/british-irish-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/british-irish-cinema/british-irish-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "british-irish-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/british-irish-cinema/british-irish-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/british-irish-cinema/british-irish-cinema-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "western-european-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/western-european-cinema/western-european-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/western-european-cinema/western-european-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "western-european-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/western-european-cinema/western-european-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/western-european-cinema/western-european-cinema-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "eastern-european-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/eastern-european-cinema/eastern-european-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/eastern-european-cinema/eastern-european-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "eastern-european-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/eastern-european-cinema/eastern-european-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/eastern-european-cinema/eastern-european-cinema-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "balkan-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/balkan-cinema/balkan-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/balkan-cinema/balkan-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "balkan-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/balkan-cinema/balkan-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/balkan-cinema/balkan-cinema-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "oceania-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/oceania-cinema/oceania-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/oceania-cinema/oceania-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "oceania-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/oceania-cinema/oceania-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/oceania-cinema/oceania-cinema-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "romanian-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/romanian-cinema/romanian-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/romanian-cinema/romanian-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "romanian-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/romanian-cinema/romanian-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/romanian-cinema/romanian-cinema-backdrop.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "new-zealand-cinema",
+      "variant": "cover",
+      "path": "assets/collections/profile3/international-cinema/new-zealand-cinema/new-zealand-cinema-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/new-zealand-cinema/new-zealand-cinema-cover.webp"
+    },
+    {
+      "section": "international-cinema",
+      "slug": "new-zealand-cinema",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/international-cinema/new-zealand-cinema/new-zealand-cinema-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/international-cinema/new-zealand-cinema/new-zealand-cinema-backdrop.webp"
+    },
+    {
+      "section": "documentaries",
+      "slug": "politics-society",
+      "variant": "cover",
+      "path": "assets/collections/profile3/documentaries/politics-society/politics-society-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/documentaries/politics-society/politics-society-cover.webp"
+    },
+    {
+      "section": "documentaries",
+      "slug": "politics-society",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/documentaries/politics-society/politics-society-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/documentaries/politics-society/politics-society-backdrop.webp"
+    },
+    {
+      "section": "documentaries",
+      "slug": "biography-portraits",
+      "variant": "cover",
+      "path": "assets/collections/profile3/documentaries/biography-portraits/biography-portraits-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/documentaries/biography-portraits/biography-portraits-cover.webp"
+    },
+    {
+      "section": "documentaries",
+      "slug": "biography-portraits",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/documentaries/biography-portraits/biography-portraits-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/documentaries/biography-portraits/biography-portraits-backdrop.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "seinen-dark",
+      "variant": "cover",
+      "path": "assets/collections/profile3/anime/seinen-dark/seinen-dark-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/seinen-dark/seinen-dark-cover.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "seinen-dark",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/anime/seinen-dark/seinen-dark-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/seinen-dark/seinen-dark-backdrop.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "shojo-josei",
+      "variant": "cover",
+      "path": "assets/collections/profile3/anime/shojo-josei/shojo-josei-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/shojo-josei/shojo-josei-cover.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "shojo-josei",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/anime/shojo-josei/shojo-josei-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/shojo-josei/shojo-josei-backdrop.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "psychological-sci-fi",
+      "variant": "cover",
+      "path": "assets/collections/profile3/anime/psychological-sci-fi/psychological-sci-fi-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/psychological-sci-fi/psychological-sci-fi-cover.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "psychological-sci-fi",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/anime/psychological-sci-fi/psychological-sci-fi-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/psychological-sci-fi/psychological-sci-fi-backdrop.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "classics-essentials",
+      "variant": "cover",
+      "path": "assets/collections/profile3/anime/classics-essentials/classics-essentials-cover.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/classics-essentials/classics-essentials-cover.webp"
+    },
+    {
+      "section": "anime",
+      "slug": "classics-essentials",
+      "variant": "backdrop",
+      "path": "assets/collections/profile3/anime/classics-essentials/classics-essentials-backdrop.webp",
+      "rawUrl": "https://raw.githubusercontent.com/spawn53/NuvioTVCS/profile3-visual-assets/assets/collections/profile3/anime/classics-essentials/classics-essentials-backdrop.webp"
+    }
+  ]
+}
