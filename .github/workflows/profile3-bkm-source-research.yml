@@ -1,0 +1,39 @@
+name: Profile 3 BKM source research
+
+on:
+  push:
+    branches:
+      - profile3-source-research
+    paths:
+      - tools/profile3-bkm-source-research.mjs
+      - .github/workflows/profile3-bkm-source-research.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: profile3-source-research
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Resolve BKM TMDB company ID
+        run: node tools/profile3-bkm-source-research.mjs
+      - name: Commit research result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/profile3-bkm-source-research.json
+          if git diff --cached --quiet; then
+            echo "No research result changes"
+            exit 0
+          fi
+          git commit -m "Record BKM TMDB company source research"
+          git push origin HEAD:profile3-source-research
