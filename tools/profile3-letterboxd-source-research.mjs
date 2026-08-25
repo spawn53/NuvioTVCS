@@ -8,14 +8,13 @@ function stripTags(s) {
 }
 
 async function get(url) {
-  const res = await fetch(url, {
+  return fetch(url, {
     redirect: 'follow',
     headers: {
       'User-Agent': UA,
       'Accept-Language': 'en-US,en;q=0.9'
     }
   });
-  return res;
 }
 
 async function discoverEfaList() {
@@ -76,6 +75,18 @@ const efaDiscovery = await discoverEfaList();
 result.efa.discovery = efaDiscovery;
 if (efaDiscovery.exact?.href) {
   result.efa.extraction = await extractIdentifier(efaDiscovery.exact.href);
+} else {
+  const efaCandidateUrls = [
+    'https://letterboxd.com/eurofilmacademy/list/european-film-awards-winners-european-film/',
+    'https://letterboxd.com/eurofilmacademy/list/european-film-awards-winners-european-film-1/',
+    'https://letterboxd.com/eurofilmacademy/list/european-film-awards-winners-european-film-2/',
+    'https://letterboxd.com/eurofilmacademy/list/european-film-awards-winners-european-film-3/'
+  ];
+  result.efa.candidateExtractions = [];
+  for (const url of efaCandidateUrls) {
+    result.efa.candidateExtractions.push(await extractIdentifier(url));
+  }
+  result.efa.extraction = result.efa.candidateExtractions.find(x => x.status === 200 && x.identifier) ?? null;
 }
 
 const tiffUrl = 'https://letterboxd.com/alderwar/list/tiff-peoples-choice-award-winners-runners/';
